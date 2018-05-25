@@ -77,6 +77,8 @@ class XMLElement():
     def __str__(self):
         """Renders the element and it's children"""
         return ''.join(render(self))
+    
+    __repr__ = __str__
 
 
 def render(x) -> [str]:
